@@ -1,0 +1,67 @@
+Good next features you can build:
+
+Search by vendor name
+Filter by date
+Save data in Local Storage
+Multiple pages using React Router
+Modal popup for edit form
+Export bills to PDF/Excel
+Dashboard with total amount
+
+You already have a strong foundation for those.
+
+
+
+
+
+
+
+
+
+  <>
+    <h1>Bill Store system</h1>
+   
+
+    <BillForm addBill={addBill} editBill = {editBill} updateBill = {updateBill} />
+    <br />
+    <br />
+    <br />
+
+     <input type="text" placeholder='search vendor' value={searchTerm} onChange={(e) => setSearchTrem(e.target.value)} />
+     <input type="date" value={dateFilter} onChange={(e) => setDateFilter(e.target.value)} />
+
+
+
+    <BillList bills={filteredBills} deleteBill={deleteBill} setEditBill = {setEditBill} />
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    i need to remove the extra (add bill text )
+    when i click the edit button it will rederect to the update page
+    the action colum should cover the both edit and delete  option 
