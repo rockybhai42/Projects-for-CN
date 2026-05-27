@@ -103,6 +103,7 @@ function VendorForm(props) {
   className="vendor-input"
   type="text"
   placeholder="Vendor Contact"
+  required
   value={vendorContact}
   onChange={(e) => setVendorContact(e.target.value)}
 />
@@ -110,6 +111,7 @@ function VendorForm(props) {
     <textarea
   className="vendor-input"
   placeholder="Vendor Information"
+  required
   value={vendorInfo}
   onChange={(e) => setVendorInfo(e.target.value)}
 ></textarea>

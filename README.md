@@ -17,4 +17,4 @@ after that cd into the frontend folder
 and install all dependencies and run the vite :npm run dev
 it will host at http://localhost:5173/
 
-
+ 

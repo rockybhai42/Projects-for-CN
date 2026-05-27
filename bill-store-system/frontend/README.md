@@ -1,4 +1,4 @@
-first install dependencies:
+gitfirst install dependencies:
 npm install  
 and run json port 5000 for testing
 warning :
