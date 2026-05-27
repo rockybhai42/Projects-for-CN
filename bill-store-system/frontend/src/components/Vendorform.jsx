@@ -103,6 +103,7 @@ function VendorForm(props) {
   className="vendor-input"
   type="text"
   placeholder="Vendor Contact"
+  pattern="[0-9]{10}"
   required
   value={vendorContact}
   onChange={(e) => setVendorContact(e.target.value)}
