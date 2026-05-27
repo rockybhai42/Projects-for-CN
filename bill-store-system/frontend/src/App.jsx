@@ -22,7 +22,7 @@ function App() {
   useEffect(() => {
     async function fetchBills() {
       try {
-        const response = await fetch("http://localhost:5000/bills");
+        const response = await fetch("http://localhost:3000/bills");
         const data = await response.json();
         setBills(data);
       } catch (error) {
@@ -36,7 +36,7 @@ function App() {
   useEffect(() =>{
     async function fetchVendors(){
       try {
-        const response = await fetch("http://localhost:5000/vendors");
+        const response = await fetch("http://localhost:3000/vendors");
         const data = await response.json();
         setVendors(data);
 
@@ -54,7 +54,7 @@ function App() {
 // funstion to add vendors to the list
 async function addVendor(vendor){
 try {
-  const response = await fetch(`http://localhost:5000/vendors`,
+  const response = await fetch(`http://localhost:3000/vendors`,
     {method:"POST",
       headers :{"Content-Type":"application/json"},
       body : JSON.stringify(vendor)
@@ -91,7 +91,7 @@ async function deleteVendor(Id){
 
 async function updateVendor(updatedVendor){
   try {
-    const response = await fetch(`http://localhost:5000/vendors/${updatedVendor.id}`,
+    const response = await fetch(`http://localhost:3000/vendors/${updatedVendor.id}`,
       {method:"PUT",
         headers:{"Content-Type":"application/json"},
         body: JSON.stringify(updatedVendor)
@@ -116,7 +116,7 @@ async function updateVendor(updatedVendor){
   // Function to add a new bill to the list
   async function addBill(bill) {
     try{
-        const response = await fetch("http://localhost:5000/bills",
+        const response = await fetch("http://localhost:3000/bills",
         {method:"POST",
           headers:{"Content-Type":"application/json"},
           body: JSON.stringify(bill)
@@ -135,7 +135,7 @@ async function updateVendor(updatedVendor){
   // Function to delete a bill from the list
   async function deleteBill(Id) {
     try{
-      await fetch(`http://localhost:5000/bills/${Id}`,
+      await fetch(`http://localhost:3000/bills/${Id}`,
         {method:"DELETE"}
       );
       setBills((prevBills) => prevBills.filter((bill) => bill.id !== Id));
@@ -150,7 +150,7 @@ async function updateVendor(updatedVendor){
   // function for edit bill
   async function updateBill(updatedBill) {
     try {
-      await fetch(`http://localhost:5000/bills/${updatedBill.id}`,
+      await fetch(`http://localhost:3000/bills/${updatedBill.id}`,
         {method:"PUT",
           headers:{"Content-Type":"application/json"},
           body: JSON.stringify(updatedBill)
