@@ -29,6 +29,20 @@
       "vendorContact": "32386642379",
       "vendorInfo": " jbjaosirij",
       "id": "aJtu_HpIgC4"
+    },
+    {
+      "vendorId": "mlik001",
+      "vendorName": "ram",
+      "vendorContact": "2323",
+      "vendorInfo": "sdgarrg",
+      "id": "VHZSO1vgyp4"
+    },
+    {
+      "vendorId": "milk01",
+      "vendorName": "rock",
+      "vendorContact": "1234567891",
+      "vendorInfo": "sasda",
+      "id": "3OCH3ooqzps"
     }
   ],
   "bills": [
@@ -76,6 +90,15 @@
       "description": "2liters",
       "createdAt": "2026-05-18T11:44:47.134Z",
       "id": "w0x3YKfQ4Ig"
+    },
+    {
+      "vendorId": "mlik02",
+      "vendorName": "milkvendors",
+      "billAmount": "88999",
+      "billImage": "",
+      "description": "",
+      "createdAt": "2026-06-11T16:05:35.146Z",
+      "id": "6Uk50bK7-Xw"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
